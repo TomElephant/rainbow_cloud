@@ -6,7 +6,7 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 /**
  * 项目名称：rainbow_cloud
  * 类 名 称：UserMainApplication
- * 类 描 述：TODO
+ * 类 描 述：test
  * 创建时间：2019-11-19 13:19
  * 创 建 人：leozheng
  */
