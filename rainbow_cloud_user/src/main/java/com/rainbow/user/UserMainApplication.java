@@ -1,5 +1,6 @@
 package com.rainbow.user;
 
+import org.mybatis.spring.annotation.MapperScan;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
@@ -11,6 +12,7 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
  * 创 建 人：leozheng
  */
 @SpringBootApplication
+@MapperScan(basePackages = "com.rainbow.user.dao")
 public class UserMainApplication {
     public static void main(String[] args) {
         SpringApplication.run(UserMainApplication.class, args);
