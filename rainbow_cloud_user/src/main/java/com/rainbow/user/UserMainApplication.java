@@ -3,6 +3,7 @@ package com.rainbow.user;
 import org.mybatis.spring.annotation.MapperScan;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.cloud.netflix.eureka.EnableEurekaClient;
 
 /**
  * 项目名称：rainbow_cloud
@@ -13,6 +14,7 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
  */
 @SpringBootApplication
 @MapperScan(basePackages = "com.rainbow.user.dao")
+@EnableEurekaClient
 public class UserMainApplication {
     public static void main(String[] args) {
         SpringApplication.run(UserMainApplication.class, args);

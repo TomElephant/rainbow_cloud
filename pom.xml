@@ -9,6 +9,9 @@
     <version>1.0-SNAPSHOT</version>
     <modules>
         <module>rainbow_cloud_user</module>
+        <module>rainbow_cloud_eureka</module>
+        <module>rainbow_cloud_gateway</module>
+        <module>rainbow_cloud_config</module>
     </modules>
     <packaging>pom</packaging>
 

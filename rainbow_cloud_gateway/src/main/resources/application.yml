@@ -1,0 +1,30 @@
+server:
+  port: 8992
+spring:
+  application:
+    name: rainbow-cloud-gateway
+  cloud:
+    gateway:
+      discovery:
+        locator:
+          enabled: true
+      routes:
+        - id: rainbow-cloud-user
+          uri: lb://rainbow-cloud-user
+          predicates:
+            - Path= /api/rainbow-cloud-user/**
+          filters:
+            - StripPrefix=2
+
+
+
+
+
+
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:8991/eureka/
+logging:
+  level:
+    org.springframework.cloud.gateway: debug

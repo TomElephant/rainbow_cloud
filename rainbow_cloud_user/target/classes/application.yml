@@ -7,6 +7,12 @@ spring:
     url: jdbc:mysql://49.233.196.4/rainbow_user?autoReconnect=true&useUnicode=true&characterEncoding=utf8
     username: root
     password: 123456
+  application:
+    name: rainbow-cloud-user
 mybatis:
   configuration:
     map-underscore-to-camel-case: true
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:8991/eureka/
